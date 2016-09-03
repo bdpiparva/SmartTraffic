@@ -22,11 +22,14 @@ public class UltrasonicSensor implements Runnable {
 
     private final List<Float> readings = new ArrayList<>();
     private boolean pause = true;
+    //Unit is cm
+    private float roadDistance;
 
     public UltrasonicSensor(Pin echoPin, Pin trigPin) {
         this.echoPin = gpio.provisionDigitalInputPin(echoPin);
         this.trigPin = gpio.provisionDigitalOutputPin(trigPin);
         this.trigPin.low();
+        this.roadDistance = 300f;
     }
 
     public float measureDistance() throws TimeoutException {
@@ -116,6 +119,14 @@ public class UltrasonicSensor implements Runnable {
         List<Float> data = new ArrayList<>(readings.subList(0, readings.size()));
         readings.clear();
         return data;
+    }
+
+    public float getRoadDistance() {
+        return roadDistance;
+    }
+
+    public void setRoadDistance(float roadDistance) {
+        this.roadDistance = roadDistance;
     }
 
     /**
