@@ -39,8 +39,8 @@ public class Lane {
         sensors.add(sensor);
     }
 
-    private void startSensor() {
-        sensors.forEach(sensor -> new Thread(sensor).start());
+    public void start() {
+        startSensor();
     }
 
     public boolean isTrafficAtPeak() {
@@ -48,12 +48,12 @@ public class Lane {
         int sensorAtThreshold = 0;
 
         for(UltrasonicSensor sensor : sensors) {
-            if (getTrafficFactor(sensor) > thresholdFactor) {
+            if (getTrafficFactor(sensor) >= thresholdFactor) {
                 sensorAtThreshold++;
             }
         }
 
-        if(sensorAtThreshold / sensors.size() > 0.5) {
+        if(sensorAtThreshold / sensors.size() >= 0.5) {
             return true;
         }
 
@@ -83,7 +83,7 @@ public class Lane {
         return vehicleCount;
     }
 
-    public void start() {
-        startSensor();
+    private void startSensor() {
+        sensors.forEach(sensor -> new Thread(sensor).start());
     }
 }
