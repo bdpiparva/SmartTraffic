@@ -5,7 +5,6 @@ import com.pi4j.io.gpio.GpioFactory;
 import com.pi4j.io.gpio.GpioPinDigitalInput;
 import com.pi4j.io.gpio.GpioPinDigitalOutput;
 import com.pi4j.io.gpio.Pin;
-import com.pi4j.io.gpio.RaspiPin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +15,9 @@ public class UltrasonicSensor implements Runnable {
     private final static int TRIG_DURATION_IN_MICROS = 10; // trigger duration of 10 micro s
     private final static int WAIT_DURATION_IN_MILLIS = 60; // wait 60 milli s
     private final static int TIMEOUT = Integer.MAX_VALUE;
-    private final static GpioController gpio = GpioFactory.getInstance();
-    private final GpioPinDigitalInput echoPin;
-    private final GpioPinDigitalOutput trigPin;
+    private static GpioController gpio;
+    private GpioPinDigitalInput echoPin;
+    private GpioPinDigitalOutput trigPin;
 
     private final List<Float> readings = new ArrayList<>();
     private boolean pause = true;
@@ -26,6 +25,7 @@ public class UltrasonicSensor implements Runnable {
     private float roadDistance;
 
     public UltrasonicSensor(Pin echoPin, Pin trigPin) {
+        gpio = GpioFactory.getInstance();
         this.echoPin = gpio.provisionDigitalInputPin(echoPin);
         this.trigPin = gpio.provisionDigitalOutputPin(trigPin);
         this.trigPin.low();
@@ -75,32 +75,13 @@ public class UltrasonicSensor implements Runnable {
         return (long) Math.ceil((end - start) / 1000.0);  // Return micro seconds
     }
 
-//    public static void main(String[] args) {
-//        Pin echoPin = RaspiPin.GPIO_00; // PI4J custom numbering (pin 11)
-//        Pin trigPin = RaspiPin.GPIO_07; // PI4J custom numbering (pin 7)
-//        UltrasonicSensor monitor = new UltrasonicSensor(echoPin, trigPin);
-//
-//        while (true) {
-//            try {
-//                System.out.println("Distance(cm): " + monitor.measureDistance());
-//            } catch (TimeoutException e) {
-//                System.err.println(e);
-//            }
-//
-//            try {
-//                Thread.sleep(WAIT_DURATION_IN_MILLIS);
-//            } catch (InterruptedException ex) {
-//                System.err.println("Interrupt during trigger");
-//            }
-//        }
-//    }
-
     @Override
     public void run() {
         while (true) {
             if (pause) {
                 try {
-                    readings.add(measureDistance());
+                    float distance = measureDistance();
+                    readings.add(distance);
                 } catch (TimeoutException e) {
                     System.err.println(e);
                 }
@@ -129,9 +110,6 @@ public class UltrasonicSensor implements Runnable {
         this.roadDistance = roadDistance;
     }
 
-    /**
-     * Exception thrown when timeout occurs
-     */
     private static class TimeoutException extends Exception {
 
         private final String reason;
