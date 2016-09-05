@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab9eb367-fb6f-4f68-a9df-1b60f1771365" name="Default" comment="" />
+    <list default="true" id="ab9eb367-fb6f-4f68-a9df-1b60f1771365" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_pi4j_pi4j_core_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_pi4j_pi4j_gpio_extension_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_all_1_9_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/TrafficSignal.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/TrafficSignal_main.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/TrafficSignal_test.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/ui/SerialMonitor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/smarttraffic/LaneTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/smarttraffic/SignalTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TrafficSignal.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TrafficSignal/com/thoughtworks/smarttraffic/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TrafficSignal/com/thoughtworks/smarttraffic/UltrasonicSensor$TimeoutException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TrafficSignal/com/thoughtworks/smarttraffic/UltrasonicSensor.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.0/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/TrafficSignal.jar" afterPath="$PROJECT_DIR$/build/libs/TrafficSignal.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Lane.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Lane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Signal.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Signal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/UltrasonicSensor.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/UltrasonicSensor.java" />
+    </list>
     <ignored path="TrafficSignal.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +53,18 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="TrafficSignal" />
   </component>
@@ -25,38 +73,69 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="225">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UltrasonicSensor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/UltrasonicSensor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3289#3290#0" expanded="true" />
+                <element signature="e#3324#3325#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="285">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lane.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Lane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1125">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#2159#2160#0" expanded="true" />
+                <element signature="e#2228#2229#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UltrasonicSensor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/UltrasonicSensor.java">
+      <file leaf-file-name="LaneTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/smarttraffic/LaneTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="375">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4112#4113#0" expanded="true" />
-                <element signature="e#4156#4157#0" expanded="true" />
-                <element signature="e#4210#4211#0" expanded="true" />
-                <element signature="e#4252#4253#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,19 +146,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gradlew" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradlew">
+      <file leaf-file-name="Signal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Signal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="765">
+              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+              <folding>
+                <element signature="docComment;class#Signal#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,13 +169,332 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="TrafficSignal" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="TrafficSignal" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'TrafficSignal'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'TrafficSignal'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'TrafficSignal'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'TrafficSignal'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'TrafficSignal'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'TrafficSignal'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'TrafficSignal'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'TrafficSignal'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="2945870662000" />
         <entry key="$USER_HOME$/IdeaProjects/bootcampDemo" value="2934530334000" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="TrafficSignal" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/jetty" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/open-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/ui" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-base-services-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-base-services-groovy-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-cli-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-core-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-docs-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-installation-beacon-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-jvm-services-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-launcher-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-logging-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-messaging-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-model-core-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-model-groovy-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-native-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-open-api-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-process-services-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-resources-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-script-kotlin-0.3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-tooling-api-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-ui-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/gradle-wrapper-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/groovy-all-2.4.7.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-announce-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-antlr-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-build-comparison-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-build-init-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-code-quality-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-dependency-management-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-diagnostics-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-ear-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-ide-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-ide-native-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-ide-play-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-ivy-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-jacoco-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-javascript-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-jetty-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-language-groovy-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-language-java-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-language-jvm-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-language-native-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-language-scala-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-maven-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-osgi-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-platform-base-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-platform-jvm-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-platform-native-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-platform-play-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-plugin-development-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-plugin-use-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-plugins-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-publish-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-reporting-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-resources-http-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-resources-s3-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-resources-sftp-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-scala-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-signing-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-test-kit-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-testing-base-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-testing-jvm-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-testing-native-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/gradle-tooling-api-builders-3.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.0-all/6v8c6qg2jpi8twyfv2a5s9mii/gradle-3.0/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="externalProjectsViewState">
@@ -106,11 +504,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/DistanceMonitor.java" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/Main.java" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/UltrasonicSensor.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/smarttraffic/SignalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Signal.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/smarttraffic/LaneTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Lane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/ui/SerialMonitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/UltrasonicSensor.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -118,7 +531,7 @@
     <option name="width" value="1440" />
     <option name="height" value="822" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -143,16 +556,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="TrafficSignal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -178,27 +590,101 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smarttraffic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pi4j-1.1/lib/pi4j-service.jar!/" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.thoughtworks.smarttraffic" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LaneTest.testTrafficPeakLevel">
+    <configuration default="false" name="SignalTest.shouldAbleToStatSignalProcessing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.smarttraffic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TrafficSignal_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.smarttraffic" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.smarttraffic.SignalTest" />
+      <option name="METHOD_NAME" value="shouldAbleToStatSignalProcessing" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.smarttraffic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.smarttraffic.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TrafficSignal_main" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="LaneTest.testTrafficPeakLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.smarttraffic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TrafficSignal_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.smarttraffic" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.smarttraffic.LaneTest" />
+      <option name="METHOD_NAME" value="testTrafficPeakLevel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -433,9 +919,24 @@
       <listeners />
       <method />
     </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SignalTest.shouldAbleToStatSignalProcessing" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LaneTest.testTrafficPeakLevel" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LaneTest.testTrafficPeakLevel" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SignalTest.shouldAbleToStatSignalProcessing" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -447,41 +948,137 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 15h 25m 34s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 15h 26m 03s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 15h 32m 35s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 15h 33m 35s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 15h 33m 39s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 15h 36m 36s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 15h 37m 00s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 15h 45m 24s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 15h 48m 35s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LaneTest_testTrafficPeakLevel - 2016.09.05 at 16h 06m 59s.xml">
+      <configuration name="LaneTest.testTrafficPeakLevel" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24236111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24177396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24236111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Signal.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Signal.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Lane.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Lane.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -491,18 +1088,57 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="225">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/UltrasonicSensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
+            <element signature="e#3324#3325#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/Main.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Lane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#2159#2160#0" expanded="true" />
+            <element signature="e#2228#2229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/smarttraffic/LaneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -513,72 +1149,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Signal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="765">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="docComment;class#Signal#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/UltrasonicSensor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
+            <element signature="e#3324#3325#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -587,41 +1179,194 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../pi4j-1.1/lib/pi4j-core-sources.jar!/com/pi4j/io/gpio/Pin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/UltrasonicSensor.java" />
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/Main.java" />
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/Main.java" />
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../pi4j-1.1/lib/pi4j-core-sources.jar!/com/pi4j/io/gpio/Pin.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/UltrasonicSensor.java" />
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="695" column="29" selection-start-line="695" selection-start-column="29" selection-end-line="695" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/javax/swing/JScrollPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="349" column="11" selection-start-line="349" selection-start-column="11" selection-end-line="349" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/smarttraffic/SignalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/smarttraffic/LaneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/smarttraffic/UltrasonicSensor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Lane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        <state relative-caret-position="1125">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#2159#2160#0" expanded="true" />
+            <element signature="e#2228#2229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Signal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+          <folding>
+            <element signature="docComment;class#Signal#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/ui/SerialMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="74" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="74" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/smarttraffic/UltrasonicSensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4112#4113#0" expanded="true" />
-            <element signature="e#4156#4157#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4252#4253#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
+            <element signature="e#3324#3325#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TrafficSignal.iml" filepath="$PROJECT_DIR$/TrafficSignal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrafficSignal.iml" filepath="$PROJECT_DIR$/.idea/modules/TrafficSignal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrafficSignal_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TrafficSignal_main.iml" group="TrafficSignal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrafficSignal_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TrafficSignal_test.iml" group="TrafficSignal" />
     </modules>
   </component>
 </project>
