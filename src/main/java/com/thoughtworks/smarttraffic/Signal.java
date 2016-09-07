@@ -41,7 +41,9 @@ public class Signal {
     public void start() throws InterruptedException {
 
         lanes.forEach(lane -> lane.start());
-        new Thread(new TrafficProcessor()).start();
+        Thread trafficProcessor = new Thread(new TrafficProcessor());
+        trafficProcessor.setPriority(Thread.MAX_PRIORITY);
+        trafficProcessor.start();
 
     }
 
@@ -81,6 +83,8 @@ public class Signal {
 
                 if (isRunning) {
                     System.out.println(((System.currentTimeMillis() + 1 - start) / 1000) + ", ");
+                    Long beforeProcessing = System.currentTimeMillis();
+
                     if (System.currentTimeMillis() >= ((totalTime - bufferTime) * 1000) + start && !isProcessed) {
                         adjustLaneTimings();
                         isProcessed = true;
@@ -92,7 +96,12 @@ public class Signal {
                         System.out.print("\nTimer: ");
                     }
                     try {
-                        Thread.sleep(1000);
+                        if(System.currentTimeMillis() - beforeProcessing < 995) {
+                            Thread.sleep(1000 - (System.currentTimeMillis() - beforeProcessing));
+                        } else {
+                            Thread.sleep(1000);
+                        }
+
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
