@@ -14,6 +14,7 @@ public class Signal {
     private boolean isRunning;
     private int bufferTime;
     private int shortestLaneDuration;
+    private int greenTimeFactor;
 
     public Signal(String name, int bufferTime) {
 
@@ -35,55 +36,29 @@ public class Signal {
         }
         else if(greenTime < shortestLaneDuration) {
             shortestLaneDuration = greenTime;
+            greenTimeFactor = (int)Math.ceil(shortestLaneDuration / 15);
         }
     }
 
     public void start() throws InterruptedException {
-
-        lanes.forEach(lane -> lane.start());
+        lanes.forEach(lane -> lane.startSensor());
         Thread trafficProcessor = new Thread(new TrafficProcessor());
         trafficProcessor.setPriority(Thread.MAX_PRIORITY);
         trafficProcessor.start();
-
     }
 
     private class TrafficProcessor implements Runnable {
-
-        private void adjustLaneTimings() {
-
-            lanes.forEach(lane -> lane.setGreenTimeAsDefault());
-
-            int noOfLanesAtPeakTraffic = (int) lanes.stream().filter(lane -> lane.isTrafficAtPeak()).count();
-
-            if(noOfLanesAtPeakTraffic != 0 && noOfLanesAtPeakTraffic != lanes.size()){
-
-                int factor = (int)Math.ceil(shortestLaneDuration / 15);
-                lanes.forEach(lane -> {
-
-                    int adjustedGreenTime;
-
-                    if(lane.isTrafficAtPeak()) {
-                        adjustedGreenTime = lane.getGreenTime() - ((lanes.size() - noOfLanesAtPeakTraffic) * factor);
-                    } else {
-                        adjustedGreenTime = lane.getGreenTime() + (noOfLanesAtPeakTraffic * factor);
-                    }
-
-                    lane.setGreenTime(adjustedGreenTime);
-                });
-            }
-        }
 
         @Override
         public void run() {
 
             long start = System.currentTimeMillis();
-            System.out.print("\nTotal time: " + totalTime + " Buffer Time: " + bufferTime + "\n");
             boolean isProcessed = false;
             while (true) {
 
                 if (isRunning) {
                     System.out.println(((System.currentTimeMillis() + 1 - start) / 1000) + ", ");
-                    Long beforeProcessing = System.currentTimeMillis();
+                    long beforeProcessing = System.currentTimeMillis();
 
                     if (System.currentTimeMillis() >= ((totalTime - bufferTime) * 1000) + start && !isProcessed) {
                         adjustLaneTimings();
@@ -106,6 +81,29 @@ public class Signal {
                         e.printStackTrace();
                     }
                 }
+            }
+        }
+
+        private void adjustLaneTimings() {
+
+            lanes.forEach(lane -> lane.setGreenTimeAsDefault());
+
+            int noOfLanesAtPeakTraffic = (int) lanes.stream().filter(lane -> lane.isTrafficAtPeak()).count();
+
+            if(noOfLanesAtPeakTraffic != 0 && noOfLanesAtPeakTraffic != lanes.size()){
+
+
+                lanes.forEach(lane -> {
+
+                    int adjustedGreenTime = 0;
+                    if(lane.isTrafficAtPeak()) {
+                        adjustedGreenTime = lane.getGreenTime() - ((lanes.size() - noOfLanesAtPeakTraffic) * greenTimeFactor);
+                    } else {
+                        adjustedGreenTime = lane.getGreenTime() + (noOfLanesAtPeakTraffic * greenTimeFactor);
+                    }
+
+                    lane.setGreenTime(adjustedGreenTime);
+                });
             }
         }
     }

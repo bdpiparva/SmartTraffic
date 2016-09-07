@@ -42,10 +42,6 @@ public class Lane {
         sensors.add(sensor);
     }
 
-    public void start() {
-        startSensor();
-    }
-
     public boolean isTrafficAtPeak() {
 
         int sensorAtThreshold = 0;
@@ -87,7 +83,7 @@ public class Lane {
         return roadDistanceFrequency;
     }
 
-    private void startSensor() {
+    public void startSensor() {
         sensors.forEach(sensor -> new Thread(sensor).start());
     }
 
