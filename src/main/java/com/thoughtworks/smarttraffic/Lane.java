@@ -9,23 +9,17 @@ import java.util.List;
 public class Lane {
 
     private int greenTime;
+    private int defaultGreenTime;
     private List<UltrasonicSensor> sensors;
     private float thresholdFactor;
     private int roadDistanceVariation;
 
-    public Lane(int greenTime) {
+    public Lane(int defaultGreenTime) {
         sensors = new ArrayList<>();
-        this.greenTime = greenTime;
+        this.greenTime = defaultGreenTime;
+        this.defaultGreenTime = defaultGreenTime;
         thresholdFactor = 0.5f;
         roadDistanceVariation = 10;
-    }
-
-    public float getThresholdFactor() {
-        return thresholdFactor;
-    }
-
-    public void setThresholdFactor(float thresholdFactor) {
-        this.thresholdFactor = thresholdFactor;
     }
 
     public int getGreenTime() {
@@ -34,6 +28,14 @@ public class Lane {
 
     public void setGreenTime(int greenTime) {
         this.greenTime = greenTime;
+    }
+
+    public float getThresholdFactor() {
+        return thresholdFactor;
+    }
+
+    public void setThresholdFactor(float thresholdFactor) {
+        this.thresholdFactor = thresholdFactor;
     }
 
     public void addSensor(UltrasonicSensor sensor) {
@@ -87,5 +89,10 @@ public class Lane {
 
     private void startSensor() {
         sensors.forEach(sensor -> new Thread(sensor).start());
+    }
+
+
+    public void setGreenTimeAsDefault() {
+        this.greenTime = this.defaultGreenTime;
     }
 }

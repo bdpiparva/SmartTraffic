@@ -13,6 +13,7 @@ public class Signal {
     private int totalTime;
     private boolean isRunning;
     private int bufferTime;
+    private int shortestLaneDuration;
 
     public Signal(String name, int bufferTime) {
 
@@ -25,6 +26,16 @@ public class Signal {
     public void addLane(Lane lane) {
         lanes.add(lane);
         totalTime += lane.getGreenTime();
+        shortestLaneDuration(lane.getGreenTime());
+    }
+
+    private void shortestLaneDuration(int greenTime) {
+        if(shortestLaneDuration == 0){
+            shortestLaneDuration = greenTime;
+        }
+        else if(greenTime < shortestLaneDuration) {
+            shortestLaneDuration = greenTime;
+        }
     }
 
     public void start() throws InterruptedException {
@@ -36,12 +47,28 @@ public class Signal {
 
     private class TrafficProcessor implements Runnable {
 
-        private void processLaneTraffic() {
+        private void adjustLaneTimings() {
 
-            lanes.forEach(lane -> {
-                boolean isAtPeak = lane.isTrafficAtPeak();
-                System.out.println("Is at peak: " + isAtPeak);
-            });
+            lanes.forEach(lane -> lane.setGreenTimeAsDefault());
+
+            int noOfLanesAtPeakTraffic = (int) lanes.stream().filter(lane -> lane.isTrafficAtPeak()).count();
+
+            if(noOfLanesAtPeakTraffic != 0 && noOfLanesAtPeakTraffic != lanes.size()){
+
+                int factor = (int)Math.ceil(shortestLaneDuration / 15);
+                lanes.forEach(lane -> {
+
+                    int adjustedGreenTime;
+
+                    if(lane.isTrafficAtPeak()) {
+                        adjustedGreenTime = lane.getGreenTime() - ((lanes.size() - noOfLanesAtPeakTraffic) * factor);
+                    } else {
+                        adjustedGreenTime = lane.getGreenTime() + (noOfLanesAtPeakTraffic * factor);
+                    }
+
+                    lane.setGreenTime(adjustedGreenTime);
+                });
+            }
         }
 
         @Override
@@ -55,7 +82,7 @@ public class Signal {
                 if (isRunning) {
                     System.out.println(((System.currentTimeMillis() + 1 - start) / 1000) + ", ");
                     if (System.currentTimeMillis() >= ((totalTime - bufferTime) * 1000) + start && !isProcessed) {
-                        processLaneTraffic();
+                        adjustLaneTimings();
                         isProcessed = true;
                     }
 
