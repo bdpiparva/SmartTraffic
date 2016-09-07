@@ -9,7 +9,7 @@ import java.util.List;
 public class Lane {
 
     private int greenTime;
-    private int defaultGreenTime;
+    private final int defaultGreenTime;
     private List<UltrasonicSensor> sensors;
     private float thresholdFactor;
     private int roadDistanceVariation;
@@ -90,5 +90,9 @@ public class Lane {
 
     public void setGreenTimeAsDefault() {
         this.greenTime = this.defaultGreenTime;
+    }
+
+    public int getDefaultGreenTime() {
+        return defaultGreenTime;
     }
 }
