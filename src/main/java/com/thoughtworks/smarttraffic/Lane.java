@@ -1,5 +1,7 @@
 package com.thoughtworks.smarttraffic;
 
+import com.thoughtworks.smarttraffic.ui.LCD16X2;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,14 +17,18 @@ public class Lane {
     private int roadDistanceVariation;
     private LEDTimer ledTimer;
     private int nextGreenTime;
+    private LCD16X2 lcd16X2;
+    private String name;
 
 
-    public Lane(int defaultGreenTime) {
+    public Lane(String name, int defaultGreenTime) {
         sensors = new ArrayList<>();
         this.greenTime = defaultGreenTime;
         this.defaultGreenTime = defaultGreenTime;
         thresholdFactor = 0.5f;
         roadDistanceVariation = 10;
+        this.name = name;
+        lcd16X2 = new LCD16X2();
     }
 
     public int getGreenTime() {
@@ -74,7 +80,7 @@ public class Lane {
             return 0;
 
         int roadDistanceFrequency = calculateRoadDistanceFrequency(readings, getApproxRoadDistance(sensor));
-        return (roadDistanceFrequency * 1.0f/ readings.size());
+        return (roadDistanceFrequency * 1.0f / readings.size());
     }
 
     private float getApproxRoadDistance(UltrasonicSensor sensor) {
@@ -103,6 +109,7 @@ public class Lane {
     }
 
     public void display(String content) {
+        lcd16X2.write(name + ": " + content);
     }
 
     public void setNextGreenTimeAsDefault() {

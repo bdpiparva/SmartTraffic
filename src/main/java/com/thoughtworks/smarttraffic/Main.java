@@ -26,10 +26,10 @@ public class Main {
 //        UltrasonicSensor monitor3 = new UltrasonicSensor(echoPin3, trigPin3);
 //        UltrasonicSensor monitor4 = new UltrasonicSensor(echoPin4, trigPin4);
 
-        Lane A = new Lane(10);
+        Lane A = new Lane("A", 10);
         A.addSensor(monitor1);
 
-        Lane B = new Lane(10);
+        Lane B = new Lane("B", 10);
         B.addSensor(monitor2);
 
 //        Lane C = new Lane(15);

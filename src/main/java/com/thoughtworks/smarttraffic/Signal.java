@@ -75,14 +75,18 @@ public class Signal {
 
                     ++timer;
 
-                    if(timer >= currentLane.getGreenTime() - yellowTime) {
-                        currentLane.display("Yellow" + timer);
+                    if (timer >= currentLane.getGreenTime() - yellowTime) {
+                        currentLane.display("Yellow " + timer);
                     } else {
-                        currentLane.display("Green" + timer);
+                        currentLane.display("Green " + timer);
                     }
-                    if(timer == currentLane.getGreenTime()){
+
+                    if (timer == currentLane.getGreenTime()) {
                         currentLane.display("Red");
-                        currentLane = lanes.get(++currentLaneIndex);
+                        ++currentLaneIndex;
+                        if (lanes.size() > currentLaneIndex)
+                            currentLane = lanes.get(currentLaneIndex);
+                        timer = 0;
                     }
 
 
