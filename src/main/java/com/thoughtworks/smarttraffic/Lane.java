@@ -9,11 +9,13 @@ import java.util.List;
 public class Lane {
 
     private int greenTime;
-    private int defaultGreenTime;
+    private final int defaultGreenTime;
     private List<UltrasonicSensor> sensors;
     private float thresholdFactor;
     private int roadDistanceVariation;
     private LEDTimer ledTimer;
+    private int nextGreenTime;
+
 
     public Lane(int defaultGreenTime) {
         sensors = new ArrayList<>();
@@ -41,6 +43,14 @@ public class Lane {
 
     public void addSensor(UltrasonicSensor sensor) {
         sensors.add(sensor);
+    }
+
+    public int getNextGreenTime() {
+        return nextGreenTime;
+    }
+
+    public void setNextGreenTime(int nextGreenTime) {
+        this.nextGreenTime = nextGreenTime;
     }
 
     public boolean isTrafficAtPeak() {
@@ -88,8 +98,18 @@ public class Lane {
         sensors.forEach(sensor -> new Thread(sensor).start());
     }
 
+    public int getDefaultGreenTime() {
+        return defaultGreenTime;
+    }
 
-    public void setGreenTimeAsDefault() {
-        this.greenTime = this.defaultGreenTime;
+    public void display(String content) {
+    }
+
+    public void setNextGreenTimeAsDefault() {
+        this.nextGreenTime = this.defaultGreenTime;
+    }
+
+    public void updateGreenTime() {
+        this.greenTime = this.nextGreenTime;
     }
 }

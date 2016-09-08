@@ -14,15 +14,9 @@ import static org.junit.Assert.*;
 public class SignalTest {
 
     @Test
-    public void shouldAbleToStatSignalProcessing() throws InterruptedException {
+    public void shouldAbleToCalculateGreenTimeFactor() throws InterruptedException {
+        System.out.print((int)Math.ceil(10 / 15f));
 
-        Lane lane = Mockito.mock(Lane.class);
-        Mockito.stubVoid(lane).toReturn().on().start();
-
-        Signal golfCourse = new Signal("Golf Course", 10);
-        golfCourse.addLane(lane);
-
-        golfCourse.start();
     }
 
 }
