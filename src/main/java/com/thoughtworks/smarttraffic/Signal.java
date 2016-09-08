@@ -15,6 +15,8 @@ public class Signal {
     private int bufferTime;
     private int shortestLaneDuration;
     private int greenTimeFactor;
+    private int currentLaneIndex;
+    private int yellowTime;
 
     public Signal(String name, int bufferTime) {
 
@@ -22,6 +24,8 @@ public class Signal {
         this.bufferTime = bufferTime;
         this.name = name;
         this.lanes = new ArrayList<>(4);
+        this.currentLaneIndex = 0;
+        this.yellowTime = 3;
     }
 
     public void addLane(Lane lane) {
@@ -54,11 +58,20 @@ public class Signal {
 
             long start = System.currentTimeMillis();
             boolean isProcessed = false;
+            int timer = 0;
+            Lane currentLane = lanes.get(currentLaneIndex);
             while (true) {
 
                 if (isRunning) {
-                    System.out.println(((System.currentTimeMillis() + 1 - start) / 1000) + ", ");
                     long beforeProcessing = System.currentTimeMillis();
+
+                    System.out.println(((System.currentTimeMillis() + 1 - start) / 1000) + ", ");
+
+                    currentLane.displayTimer(++timer);
+                    if(timer == currentLane.getGreenTime()){
+                        currentLane = currentLaneIndex++;
+                    }
+
 
                     if (System.currentTimeMillis() >= ((totalTime - bufferTime) * 1000) + start && !isProcessed) {
                         adjustLaneTimings();
@@ -67,6 +80,7 @@ public class Signal {
 
                     if (System.currentTimeMillis() >= start + (totalTime * 1000)) {
                         start = System.currentTimeMillis();
+
                         isProcessed = false;
                         System.out.print("\nTimer: ");
                     }
@@ -91,7 +105,6 @@ public class Signal {
             int noOfLanesAtPeakTraffic = (int) lanes.stream().filter(lane -> lane.isTrafficAtPeak()).count();
 
             if(noOfLanesAtPeakTraffic != 0 && noOfLanesAtPeakTraffic != lanes.size()){
-
 
                 lanes.forEach(lane -> {
 

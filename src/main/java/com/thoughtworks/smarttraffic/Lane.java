@@ -13,6 +13,7 @@ public class Lane {
     private List<UltrasonicSensor> sensors;
     private float thresholdFactor;
     private int roadDistanceVariation;
+    private LEDTimer ledTimer;
 
     public Lane(int defaultGreenTime) {
         sensors = new ArrayList<>();
