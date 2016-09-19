@@ -49,18 +49,14 @@ public class Signal {
     }
 
     public void start() throws InterruptedException {
-        lanes.forEach(lane -> lane.startSensor());
-        Thread trafficProcessor = new Thread(new TrafficProcessor());
-        trafficProcessor.setPriority(Thread.MAX_PRIORITY);
         greenTimeFactor = (int) Math.ceil(shortestLaneDuration / adjustmentFactor);
+        TrafficProcessor trafficProcessor = new TrafficProcessor();
         trafficProcessor.start();
     }
 
-    private class TrafficProcessor implements Runnable {
+    private class TrafficProcessor{
 
-        @Override
-        public void run() {
-
+        public void start() {
             long start = System.currentTimeMillis();
             boolean isProcessed = false;
             int timer = 0;
@@ -70,6 +66,8 @@ public class Signal {
 
                 if (isRunning) {
                     long beforeProcessing = System.currentTimeMillis();
+
+                    lanes.forEach(lane -> lane.startSensor());
 
                     System.out.println(((System.currentTimeMillis() + 1 - start) / 1000) + ", ");
 
@@ -116,6 +114,67 @@ public class Signal {
             }
         }
 
+
+       /* @Override
+        public void run() {
+
+            long start = System.currentTimeMillis();
+            boolean isProcessed = false;
+            int timer = 0;
+            currentLaneIndex = 0;
+            Lane currentLane = lanes.get(currentLaneIndex);
+            while (true) {
+
+                if (isRunning) {
+                    long beforeProcessing = System.currentTimeMillis();
+
+                    lanes.forEach(lane -> lane.startSensor());
+
+                    System.out.println(((System.currentTimeMillis() + 1 - start) / 1000) + ", ");
+
+                    ++timer;
+
+                    if (timer >= currentLane.getGreenTime() - yellowTime) {
+                        currentLane.display("Yellow " + timer);
+                    } else {
+                        currentLane.display("Green " + timer);
+                    }
+
+                    if (timer == currentLane.getGreenTime()) {
+                        currentLane.display("Red");
+                        ++currentLaneIndex;
+                        if (lanes.size() > currentLaneIndex)
+                            currentLane = lanes.get(currentLaneIndex);
+                        timer = 0;
+                    }
+
+
+                    if (System.currentTimeMillis() >= ((totalTime - bufferTime) * 1000) + start && !isProcessed) {
+                        adjustLaneTimings();
+                        isProcessed = true;
+                    }
+
+                    if (System.currentTimeMillis() >= start + (totalTime * 1000)) {
+                        start = System.currentTimeMillis();
+                        timer = 0;
+                        currentLaneIndex = 0;
+                        currentLane = lanes.get(0);
+                        lanes.forEach(lane -> lane.updateGreenTime());
+                        isProcessed = false;
+                        System.out.print("\nTimer: ");
+                    }
+                    try {
+                        if (System.currentTimeMillis() - beforeProcessing < 995) {
+                            Thread.sleep(1000 - (System.currentTimeMillis() - beforeProcessing));
+                        }
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+*/
         private void adjustLaneTimings() {
 
             System.out.println("Adjust Time");

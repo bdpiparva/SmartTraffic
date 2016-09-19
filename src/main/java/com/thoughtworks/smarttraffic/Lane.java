@@ -101,7 +101,8 @@ public class Lane {
     }
 
     public void startSensor() {
-        sensors.forEach(sensor -> new Thread(sensor).start());
+//        sensors.forEach(sensor -> new Thread(sensor).start());
+        sensors.forEach(sensor -> sensor.startSensor());
     }
 
     public int getDefaultGreenTime() {

@@ -96,6 +96,16 @@ public class UltrasonicSensor implements Runnable {
 
     }
 
+    public void startSensor() {
+        float distance = 0;
+        try {
+            distance = measureDistance();
+            readings.add(distance);
+        } catch (TimeoutException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
     public List<Float> getReadings() {
         List<Float> data = new ArrayList<>(readings.subList(0, readings.size()));
         readings.clear();
